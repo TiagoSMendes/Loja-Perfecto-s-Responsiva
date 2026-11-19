@@ -27,6 +27,13 @@ function Menu(config){
     }
     
     this.btn.addEventListener('click', openOrClose )
+
+    // No celular, fecha o menu ao clicar em um link
+    Array.prototype.forEach.call(this.nav.querySelectorAll('a'), function(link){
+        link.addEventListener('click', function(){
+            if(_this.maxWidth && window.innerWidth <= _this.maxWidth) closeMenu()
+        })
+    })
     
     function openOrClose(){
         if(!_opened){
@@ -47,6 +54,7 @@ function Menu(config){
         applyStyleToNav(_style)
         
         _opened = true;
+        _this.btn.setAttribute('aria-expanded', 'true')
     }
     
     function applyStyleToNav(_style){
@@ -64,9 +72,7 @@ function Menu(config){
         applyStyleToNav(_style)
         
         _opened = false;
+        _this.btn.setAttribute('aria-expanded', 'false')
     }
     
 }
-
-
-

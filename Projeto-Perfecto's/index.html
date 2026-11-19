@@ -1,205 +1,191 @@
 <!doctype html>
 <html lang="pt-br">
     <head>
-        <title> Perfecto's </title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Perfecto's | Jaquetas de couro e botas</title>
         <meta name="author" content="Tiago Mendes">
-        <meta name="description" content="Jaquetas de couro Perfecto's">
-        <meta name="keywords" content="Moda, Jaquetas de couro, Moda masculina">
+        <meta name="description" content="Perfecto's: jaquetas de couro e botas de alta qualidade, peças atemporais com muito estilo.">
+        <meta name="keywords" content="Moda, Jaquetas de couro, Botas, Moda masculina">
+        <meta name="theme-color" content="#56647b">
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-        <!-- Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-        
-      <link rel="stylesheet" href="style/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sintony:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style/normalize.css">
         <link rel="stylesheet" href="style/main.css">
-      
     </head>
     <body class="no-js">
-        
+
         <header class="header">
-          <a href="index.html" class="logo-text">Perfecto's</a>
-          
-          <button style="display: none;" class="header__btnMenu"> <i class="fas fa-bars fa-2x"></i> <span class="sr-only">Menu</span></button>
-          
-          <nav class="header__nav">
+          <a href="#inicio" class="logo-text">Perfecto's</a>
+
+          <button style="display: none;" class="header__btnMenu" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false">
+            <i class="fas fa-bars fa-2x" aria-hidden="true"></i> <span class="sr-only">Menu</span>
+          </button>
+
+          <nav class="header__nav" id="menu-principal" aria-label="Menu principal">
             <ul>
-              <li><a href="#">design folio</a></li>
-              <li><a href="#">services</a></li>
-              <li><a href="#">our business</a></li>
-              <li><a href="#">how we help</a></li>
-              <li><a href="#">take the tour</a></li>
-              <li><a href="#">contact</a></li>
+              <li><a href="#inicio">início</a></li>
+              <li><a href="#equipe">nossa equipe</a></li>
+              <li><a href="#sobre">sobre nós</a></li>
+              <li><a href="#colecao">coleção</a></li>
+              <li><a href="#depoimentos">depoimentos</a></li>
+              <li><a href="#contato">contato</a></li>
             </ul>
           </nav>
         </header>
-        
-        <section class="hero">            
-          <h1 class="hero__title">            
-            High-quality leather jackets and boots
+
+        <main>
+        <section class="hero" id="inicio">
+          <h1 class="hero__title">
+            Jaquetas de couro e botas de alta qualidade
           </h1>
-          <p class="hero__text">The Perfecto's leather jackets and boots are timeless pieces of great style.</p>
-          <a href="#" class="hero__btn">Buy it now</a>                      
+          <p class="hero__text">As jaquetas e botas Perfecto's são peças atemporais, com muito estilo.</p>
+          <a href="#colecao" class="hero__btn">Compre agora</a>
         </section>
 
-        <div class="container">
-            <section class="people-cards">
-            <article class="people-cards__card">               
-
-                <img src="img/c01.gif" alt="Carousel Img" class="people-cards__image">
-
+        <div class="container" id="equipe">
+            <section class="people-cards" aria-label="Nossa equipe">
+            <article class="people-cards__card">
+                <img src="img/c01.webp" alt="Modelo vestindo jaqueta de couro Perfecto's" class="people-cards__image" loading="lazy">
                 <div class="people-cards__avatar">
-                  <img src="img/teamsprite_01.png" alt="Carousel Img">
+                  <img src="img/teamsprite_01.webp" alt="Foto de perfil da estilista" loading="lazy">
                 </div>
                 <div class="people-cards__content">
-                  <h2 class="people-cards__title">Lorem ipsum dolor sit amet consectetur</h2>
-                  <p class="people-cards__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.</p>
+                  <h2 class="people-cards__title">Design que atravessa gerações</h2>
+                  <p class="people-cards__text">Nossas estilistas desenham cada modelo inspiradas nos clássicos do rock e da estrada, com cortes que nunca saem de moda.</p>
                 </div>
             </article>
-            
-            <article class="people-cards__card">               
 
-                <img src="img/c02.gif" alt="Carousel Img" class="people-cards__image">
-
+            <article class="people-cards__card">
+                <img src="img/c02.webp" alt="Detalhe do couro de uma jaqueta" class="people-cards__image" loading="lazy">
                 <div class="people-cards__avatar">
-                  <img src="img/teamsprite_02.png" alt="Carousel Img">
+                  <img src="img/teamsprite_02.webp" alt="Foto de perfil do artesão" loading="lazy">
                 </div>
                 <div class="people-cards__content">
-                  <h2 class="people-cards__title">Lorem ipsum dolor sit amet consectetur</h2>
-                  <p class="people-cards__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.</p>
+                  <h2 class="people-cards__title">Couro legítimo selecionado</h2>
+                  <p class="people-cards__text">Trabalhamos apenas com couro legítimo, escolhido à mão, que fica mais bonito e confortável com o uso.</p>
                 </div>
             </article>
-            
-            <article class="people-cards__card">               
 
-                <img src="img/c03.gif" alt="Carousel Img" class="people-cards__image">
-
+            <article class="people-cards__card">
+                <img src="img/c03.webp" alt="Botas de couro Perfecto's" class="people-cards__image" loading="lazy">
                 <div class="people-cards__avatar">
-                  <img src="img/teamsprite_03.png" alt="Carousel Img">
+                  <img src="img/teamsprite_03.webp" alt="Foto de perfil do sapateiro" loading="lazy">
                 </div>
                 <div class="people-cards__content">
-                  <h2 class="people-cards__title">Lorem ipsum dolor sit amet consectetur</h2>
-                  <p class="people-cards__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.</p>
+                  <h2 class="people-cards__title">Botas feitas para durar</h2>
+                  <p class="people-cards__text">Costura reforçada e solado resistente: botas pensadas para acompanhar você por muitos anos.</p>
                 </div>
             </article>
-            
-            <article class="people-cards__card">               
 
-                <img src="img/c04.gif" alt="Carousel Img" class="people-cards__image">
-
+            <article class="people-cards__card">
+                <img src="img/c04.webp" alt="Animação de uma peça da coleção" class="people-cards__image" loading="lazy">
                 <div class="people-cards__avatar">
-                  <img src="img/teamsprite_04.png" alt="Carousel Img">
+                  <img src="img/teamsprite_04.webp" alt="Foto de perfil do atendimento" loading="lazy">
                 </div>
                 <div class="people-cards__content">
-                  <h2 class="people-cards__title">Lorem ipsum dolor sit amet consectetur</h2>
-                  <p class="people-cards__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.</p>
+                  <h2 class="people-cards__title">Atendimento de verdade</h2>
+                  <p class="people-cards__text">Tire dúvidas sobre tamanho, cuidados com o couro e trocas direto com a nossa equipe, sem robôs.</p>
                 </div>
-            </article>           
-                
+            </article>
         </section>
         </div>
-        
-        <section class="content">
+
+        <section class="content" id="sobre">
         <div class="container">
-        
-          
           <article>
-            <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa. Nullam condimentum mauris et rhoncus sagittis. Sed eu metus in diam tincidunt egestas non at odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>            
-            <a href="#" class="button button-primary">BUTTON</a>
-            <a href="#" class="button button-secundary">BUTTON</a>
+            <h3>Desde o primeiro ponto até a entrega, cada peça Perfecto's é feita com cuidado artesanal.</h3>
+            <p>A Perfecto's nasceu da paixão por jaquetas de couro clássicas. Unimos técnicas artesanais com acabamento moderno para criar peças resistentes, confortáveis e com personalidade, que combinam com o dia a dia e com a estrada.</p>
+            <a href="#colecao" class="button button-primary">VER COLEÇÃO</a>
+            <a href="#contato" class="button button-secundary">FALE CONOSCO</a>
           </article>
 
           <article>
-            <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa. Nullam condimentum mauris et rhoncus sagittis. Sed eu metus in diam tincidunt egestas non at odio.</p>
-            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean vitae lectus erat. Duis consequat laoreet velit. Mauris convallis, sapien sit amet scelerisque accumsan, felis urna aliquet nunc, viverra mollis odio tellus a nisl. Nulla lobortis lectus non rutrum viverra. Sed et molestie libero. Sed ut ultrices dui.</p>
-          </article>  
+            <h3>Qualidade que você sente no toque e vê com o tempo.</h3>
+            <p>Cada jaqueta passa por inspeção de costura, zíperes e forro antes de sair da oficina. Usamos ferragens metálicas de alta durabilidade e forro respirável.</p>
+            <p>Com os cuidados certos, uma Perfecto's dura décadas. Por isso oferecemos orientação de manutenção do couro e garantia contra defeitos de fabricação.</p>
+          </article>
           </div>
         </section>
-        
-        
-        <section class="last-articles">
+
+        <section class="last-articles" id="colecao">
             <div class="last-articles__title">
                 <div class="container">
-                    <h2>Our jackets</h2>
+                    <h2>Nossas jaquetas</h2>
                 </div>
             </div>
 
           <div class="last-articles__thumbs">
-              <a href="#"><img src="img/articles/01.jpg" alt=""></a>
-              <a href="#"><img src="img/articles/02.jpg" alt=""></a>
-              <a href="#"><img src="img/articles/03.jpg" alt=""></a>
-              <a href="#"><img src="img/articles/04.jpg" alt=""></a>
-              <a href="#"><img src="img/articles/05.jpg" alt=""></a>
-              <a href="#"><img src="img/articles/06.jpg" alt=""></a>
-              <a href="#"><img src="img/articles/07.jpg" alt=""></a>
-              <a href="#"><img src="img/articles/08.jpg" alt=""></a>
-              <a href="#"><img src="img/articles/09.jpg" alt=""></a>
-              <a href="#"><img src="img/articles/10.jpg" alt=""></a>
-              <a href="#"><img src="img/articles/11.jpg" alt=""></a>
-              <a href="#"><img src="img/articles/12.jpg" alt=""></a>
+              <a href="#contato"><img src="img/articles/01.jpg" alt="Jaqueta de couro modelo 1" loading="lazy"></a>
+              <a href="#contato"><img src="img/articles/02.jpg" alt="Jaqueta de couro modelo 2" loading="lazy"></a>
+              <a href="#contato"><img src="img/articles/03.jpg" alt="Jaqueta de couro modelo 3" loading="lazy"></a>
+              <a href="#contato"><img src="img/articles/04.jpg" alt="Jaqueta de couro modelo 4" loading="lazy"></a>
+              <a href="#contato"><img src="img/articles/05.jpg" alt="Jaqueta de couro modelo 5" loading="lazy"></a>
+              <a href="#contato"><img src="img/articles/06.jpg" alt="Jaqueta de couro modelo 6" loading="lazy"></a>
+              <a href="#contato"><img src="img/articles/07.jpg" alt="Jaqueta de couro modelo 7" loading="lazy"></a>
+              <a href="#contato"><img src="img/articles/08.jpg" alt="Jaqueta de couro modelo 8" loading="lazy"></a>
+              <a href="#contato"><img src="img/articles/09.jpg" alt="Jaqueta de couro modelo 9" loading="lazy"></a>
+              <a href="#contato"><img src="img/articles/10.jpg" alt="Jaqueta de couro modelo 10" loading="lazy"></a>
+              <a href="#contato"><img src="img/articles/11.jpg" alt="Jaqueta de couro modelo 11" loading="lazy"></a>
+              <a href="#contato"><img src="img/articles/12.jpg" alt="Jaqueta de couro modelo 12" loading="lazy"></a>
           </div>
         </section>
 
-        <div class="laptop-slider">            
-          <div class="slideshow">
-            <figure><img alt="" src="img/slider/slide-01.png" /></figure>
-            <figure><img alt="" src="img/slider/slide-02.png" /></figure>
-            <figure><img alt="" src="img/slider/slide-01.png" /></figure>
-            <figure><img alt="" src="img/slider/slide-02.png" /></figure>
-            <span class="prev" style="display: none;"><i class="fas fa-angle-left fa-4x"></i></span>
-            <span class="next" style="display: none;"><i class="fas fa-angle-right fa-4x"></i></span>
-          </div>                    
+        <div class="laptop-slider">
+          <div class="slideshow" aria-roledescription="carrossel" aria-label="Loja online no computador">
+            <figure><img alt="Página da loja Perfecto's no notebook" src="img/slider/slide-01.png" loading="lazy"></figure>
+            <figure><img alt="Página de produto da Perfecto's no notebook" src="img/slider/slide-02.png" loading="lazy"></figure>
+            <figure><img alt="Página da loja Perfecto's no notebook" src="img/slider/slide-01.png" loading="lazy"></figure>
+            <figure><img alt="Página de produto da Perfecto's no notebook" src="img/slider/slide-02.png" loading="lazy"></figure>
+            <span class="prev" style="display: none;" role="button" tabindex="0" aria-label="Imagem anterior"><i class="fas fa-angle-left fa-4x" aria-hidden="true"></i></span>
+            <span class="next" style="display: none;" role="button" tabindex="0" aria-label="Próxima imagem"><i class="fas fa-angle-right fa-4x" aria-hidden="true"></i></span>
+          </div>
         </div>
-        
-        <section class="quote-container">
 
-          <div class="quote-slideshow">
+        <section class="quote-container" id="depoimentos">
+          <div class="quote-slideshow" aria-roledescription="carrossel" aria-label="Depoimentos de clientes">
             <figure>
-              <h2>Nam mi enim, auctor non ultricies a, fringilla eu risus. Praesent vitae lorem et elit tincidunt accumsan suscipit eu libero. </h2>
+              <h2>"Comprei minha jaqueta há cinco anos e ela só ficou mais bonita. O couro é de outro nível."</h2>
               <figcaption>
-                Nam mi enim, auctor non ultricies.
+                Rafael S., Recife
               </figcaption>
             </figure>
             <figure>
-              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.</h2>
+              <h2>"As botas chegaram rápido, o tamanho ficou perfeito e o atendimento me ajudou em tudo."</h2>
               <figcaption>
-                Nam mi enim, auctor.
+                Camila M., São Paulo
               </figcaption>
             </figure>
-            <span class="prev" style="display:none;"><i class="fas fa-angle-left fa-2x"></i></span>
-            <span class="next" style="display:none;"><i class="fas fa-angle-right fa-2x"></i></span>
+            <span class="prev" style="display:none;" role="button" tabindex="0" aria-label="Depoimento anterior"><i class="fas fa-angle-left fa-2x" aria-hidden="true"></i></span>
+            <span class="next" style="display:none;" role="button" tabindex="0" aria-label="Próximo depoimento"><i class="fas fa-angle-right fa-2x" aria-hidden="true"></i></span>
           </div>
-          
-          
-          
         </section>
+        </main>
 
-        <footer class="footer">
+        <footer class="footer" id="contato">
             <div class="container">
                 <h2 class="footer__logo">Perfecto's</h2>
-        
-                <p>Nam mi enim, auctor non ultricies a, fringilla eu risus. Praesent vitae lorem et elit tincidunt accumsan suscipit eu libero. Maecenas diam est, venenatis vitae dui in, vestibulum mollis arcu. Donec eu nibh tincidunt, dapibus sem eu, aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq.</p>
 
-                <p>aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq.</p>
+                <p>Jaquetas de couro e botas feitas para durar. Atendemos todo o Brasil com envio rastreado e troca facilitada em até 30 dias.</p>
+
+                <p>Projeto de estudo desenvolvido por Tiago Mendes. A Perfecto's é uma marca fictícia, e os depoimentos são ilustrativos.</p>
 
               <ul class="footer__links">
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">WhatsApp</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Design</a></li>
-                <li><a href="#">Work</a></li>
+                <li><a href="https://instagram.com/dev.tigas" target="_blank" rel="noopener">Instagram</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=558185521475" target="_blank" rel="noopener">WhatsApp</a></li>
+                <li><a href="mailto:tiagomendes13111965@hotmail.com">Contato</a></li>
+                <li><a href="https://github.com/TiagoSMendes" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="#inicio">Voltar ao topo</a></li>
               </ul>
             </div>
         </footer>
-        
-        <script src="js/menu.js"></script>        
+
+        <script src="js/menu.js"></script>
         <script src="js/carousel.js"></script>
-
         <script src="js/main.js"></script>
-
     </body>
 </html>

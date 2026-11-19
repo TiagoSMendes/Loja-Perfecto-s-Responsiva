@@ -28,6 +28,18 @@ function Carousel(config){
     function addListeners(){
         _this.btnNext.addEventListener('click', showNextSlide)
         _this.btnPrev.addEventListener('click', showPrevSlide)
+        // Setas também funcionam pelo teclado (Enter ou Espaço)
+        addKeyboard(_this.btnNext, showNextSlide)
+        addKeyboard(_this.btnPrev, showPrevSlide)
+    }
+
+    function addKeyboard(btn, action){
+        btn.addEventListener('keydown', function(e){
+            if(e.key === 'Enter' || e.key === ' '){
+                e.preventDefault()
+                action()
+            }
+        })
     }
     
     function showNextSlide(){
@@ -42,12 +54,14 @@ function Carousel(config){
     
     function showSlide(){
         var qtd = _this.itens.length;
-        var slide = _currentSlide % qtd;
-        slide = Math.abs(slide);
+        // Módulo que funciona com números negativos: voltar do primeiro vai para o último
+        var slide = ((_currentSlide % qtd) + qtd) % qtd;
         
         _this.container.querySelector('.show').classList.remove('show');
         _this.itens[slide].classList.add('show')
-        
     }
+
+    this.next = showNextSlide
+    this.prev = showPrevSlide
     
 }
