@@ -1,0 +1,20 @@
+{
+  "_sobre": "Lido automaticamente pelo portfólio de Tiago Mendes. Edite para mudar como o projeto aparece lá.",
+  "titulo": {
+    "pt": "Loja Perfecto's",
+    "en": "Perfecto's store"
+  },
+  "descricao": {
+    "pt": "Loja responsiva de jaquetas de couro com menu mobile e carrosséis feitos do zero em JavaScript.",
+    "en": "Responsive leather jacket store with mobile menu and carousels built from scratch in JavaScript."
+  },
+  "tags": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Responsivo"
+  ],
+  "site": "",
+  "imagem": "portfolio.webp",
+  "ordem": 4
+}
